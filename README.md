@@ -1,4 +1,4 @@
-# Stocks Evaluation: Prediciting Future Trends in the Stock Market
+# Stocks Evaluation: Predicting Future Trends in the Stock Market
 
 ## Overview 
 
