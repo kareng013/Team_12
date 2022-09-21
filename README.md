@@ -1,10 +1,12 @@
-# Stocks Evaluation: NASDAQ
+# Stocks Evaluation: Prediciting Future Trends in the Stock Market
 
 ## Overview 
 
-Selected topic: When is the best time to buy or sell a stock in the market? Based on historical data, we will utilize the daily % change from open to close in order to help our investor make a decision using machine learning model LSTM for future predictions. 
+Problem Statement: When is the best time to buy or sell a stock in the market? 
 
-The reason why we selected our topic is due to the ever changing circumstances in the market that make it hard for traders to predict when the best time to buy or sell is. Having historical data from over 10+ years will help us evaluate previous data in order to predict future trends in the market for the stocks selected. This will help our investors decide when is the best time to buy and sell the specific stocks selected. 
+Based on historical data, we will utilize the daily % change from open to close in order to help new investors make a decision using machine learning model LSTM for future predictions. 
+
+The reason why we selected our topic is due to the ever changing circumstances in the market that make it hard for traders to predict when the best time to buy or sell is. Having historical data from over 10+ years will help us evaluate previous data in order to predict future trends in the market for the stocks selected. This will help our investors decide the best time to buy and sell the specific stocks selected. 
 
 ### Source of Data
 
@@ -26,7 +28,7 @@ To communicate effectively we will utilize Slack App and make notes and discussi
 
 Below is a rough summary of when we will meet and what the point of that meeting will be:
 
-Tuesday - Class (Discuss progress for weekly submission that is due Thursday and have 60-80% of the work completed for each segment)
-Wednesday - Microsoft Teams Meeting at 8:00pm EST (Finalize submission details that is due next day; Submit if possible tonight or before class Thursday)
-Thursday - Class (Discuss the next segment and roles; Where help and focus is needed, who will be working on what portion, etc.; Create a date to have such accomplished task done)
-Sunday - Microsoft Teams Meeting at 8:00pm EST (Progress meeting; Discuss if anyone needs help with role before Tuesday's Class Meeting)
+* Tuesday - Class (Discuss progress for weekly submission that is due Thursday and have 60-80% of the work completed for each segment)
+* Wednesday - Microsoft Teams Meeting at 8:00pm EST (Finalize submission details that is due next day; Submit if possible tonight or before class Thursday)
+* Thursday - Class (Discuss the next segment and roles; Where help and focus is needed, who will be working on what portion, etc.; Create a date to have such accomplished task done)
+* Sunday - Microsoft Teams Meeting at 8:00pm EST (Progress meeting; Discuss if anyone needs help with role before Tuesday's Class Meeting)
