@@ -1,16 +1,16 @@
-# Stocks Evaluation: Prediciting Future Trends in the Stock Market
+# Stocks Evaluation: Predicting Future Trends in the Stock Market
 
 ## Overview 
 
 Problem Statement: When is the best time to buy or sell a stock in the market? 
 
-Based on historical data, we will utilize the daily % change from open to close in order to help new investors make a decision using machine learning model LSTM for future predictions. 
+Based on historical data, we will utilize the daily price of the stock at close to predict the next days closing price in order to help new investors make a decision using machine learning model LSTM for future predictions. 
 
 The reason why we selected our topic is due to the ever changing circumstances in the market that make it hard for traders to predict when the best time to buy or sell is. Having historical data from over 10+ years will help us evaluate previous data in order to predict future trends in the market for the stocks selected. This will help our investors decide the best time to buy and sell the specific stocks selected. 
 
 ### Source of Data
 
-We will be utilizing three company stocks from Yahoo Finance as the source of data. We have exported data with maximum history in daily changes from open to close. The stocks we are evaluating using the model are Google, Netflix, Blackberry. The reason we chose these stocks is because we wanted to utilize stocks that have been around for a very long time and can show trends through out different periods having gone through different environmental and financial constraints.  
+We will be utilizing stocks from 3 companies from Yahoo Finance as the source of data. We have exported data with maximum history to evaluate daily open and close price. The stocks we are evaluating using the model are Google, Netflix, Blackberry. The reason we chose these stocks is because we wanted to utilize stocks that have been around for a very long time and can show trends through out different periods having gone through different environmental and financial changes.  
 
 A few questions we hope to answer as we examine this data are:
 
