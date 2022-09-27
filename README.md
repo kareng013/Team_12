@@ -12,6 +12,10 @@ The reason why we selected our topic is due to the ever changing circumstances i
 
 We will be utilizing stocks from 3 companies from Yahoo Finance as the source of data. We have exported data with maximum history to evaluate daily open and close price. The stocks we are evaluating using the model are Google, Netflix, Blackberry. The reason we chose these stocks is because we wanted to utilize stocks that have been around for a very long time and can show trends through out different periods having gone through different environmental and financial changes.  
 
+- Below is a screenshot of the conceptual diagram of the of the 3 companies data. 
+![image](https://user-images.githubusercontent.com/104603037/191878164-2a1a34a7-2605-4e59-857c-7b852db095a9.png)
+
+
 A few questions we hope to answer as we examine this data are:
 
 1) Is this stock volatile?
