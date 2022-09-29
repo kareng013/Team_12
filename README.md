@@ -2,7 +2,7 @@
 
 ## Overview 
 
-Problem Statement: When is the best time to buy or sell a stock in the market? 
+Problem Statement: An Investor with a portfolio containing 3 stocks (Netflix, Blackberry, and Google) would like to know based on past closing prices if they should hold, sell or purchase more shares in their portfolio for the future. 
 
 Based on historical data, we will utilize the daily price of the stock at close to predict the next days closing price in order to help new investors make a decision using machine learning model LSTM for future predictions. 
 
