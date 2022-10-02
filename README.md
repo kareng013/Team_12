@@ -37,6 +37,6 @@ Below is a rough summary of when we will meet and what the point of that meeting
 * Thursday - Class (Discuss the next segment and roles; Where help and focus is needed, who will be working on what portion, etc.; Create a date to have such accomplished task done)
 * Sunday - Microsoft Teams Meeting at 8:00pm EST (Progress meeting; Discuss if anyone needs help with role before Tuesday's Class Meeting)
 
-Tableau- Click here [Tableau.](https://public.tableau.com/views/StockAnalysis_16644948441360/StockAnalysis?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
+Tableau- Click here [Tableau.](https://public.tableau.com/app/profile/gagandeep.saini5571/viz/StockAnalysis_16644948441360/Story1?publish=yes)
 
 Google Slides - Click here [GoogleSlides](https://docs.google.com/presentation/d/1DvQUJBw4VPTkZ_RZ826ioS6TOgaleCb9bUE36nq1HkQ/edit?usp=sharing)
