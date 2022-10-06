@@ -2,7 +2,7 @@
 
 ## Overview 
 
-Problem Statement: When is the best time to buy or sell a stock in the market? 
+Problem Statement: An Investor with a portfolio containing 3 stocks (Netflix, Blackberry, and Google) would like to know based on past closing prices if they should hold, sell or purchase more shares in their portfolio for the future. 
 
 Based on historical data, we will utilize the daily price of the stock at close to predict the next days closing price in order to help new investors make a decision using machine learning model LSTM for future predictions. 
 
@@ -36,3 +36,7 @@ Below is a rough summary of when we will meet and what the point of that meeting
 * Wednesday - Microsoft Teams Meeting at 8:00pm EST (Finalize submission details that is due next day; Submit if possible tonight or before class Thursday)
 * Thursday - Class (Discuss the next segment and roles; Where help and focus is needed, who will be working on what portion, etc.; Create a date to have such accomplished task done)
 * Sunday - Microsoft Teams Meeting at 8:00pm EST (Progress meeting; Discuss if anyone needs help with role before Tuesday's Class Meeting)
+
+Tableau- Click here [Tableau.](https://public.tableau.com/app/profile/gagandeep.saini5571/viz/StockAnalysis_16644948441360/Story1?publish=yes)
+
+Google Slides - Click here [GoogleSlides](https://docs.google.com/presentation/d/1DvQUJBw4VPTkZ_RZ826ioS6TOgaleCb9bUE36nq1HkQ/edit?usp=sharing)
