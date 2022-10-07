@@ -24,11 +24,11 @@ Resources:
 1) Yahoo Finance
 
 2) Software
-    a) Visual Studio Code
-    b) Jupyter Notebook
-    c) SQLAlchemy + PostgreSQL
-    d) Language: Python, Javascript, HTML
-    e) Machine Learning dependencies: 
+    * Visual Studio Code
+    * Jupyter Notebook
+    * SQLAlchemy + PostgreSQL
+    * Language: Python, Javascript, HTML
+    * Machine Learning dependencies: 
         Pandas
         Numpy
         Matplotlib
@@ -64,26 +64,26 @@ A few questions we hope to answer as we examine this data are:
 
 1) Connect the Data from CSV Files into PostgreSQL and store on cloud server - AWS RDS
 2) Retrieve Data in Jupyter and read into Dataframe - Separate for each Stock in Portfolio
-    2.1) Drop null & columns not being used for analysis
-    2.2) Change data type for Date 
-    2.3) Select input features: Open, High, Low, Close
-    2.4) Create new dataframe with training data
+    * Drop null & columns not being used for analysis
+    * Change data type for Date 
+    * Select input features: Open, High, Low, Close
+    * Create new dataframe with training data
 3) Training the Dataset 
-    3.1) Use Standard Scaler to scale training dataset - MinMaxScaler/Standard Scaler
-    3.2) Create x_train and y_train to train the model 
-    3.3) Define days to look back and future number of days to predict closing costs 
-    3.4) Create x_test list
+    * Use Standard Scaler to scale training dataset - MinMaxScaler/Standard Scaler
+    * Create x_train and y_train to train the model 
+    * Define days to look back and future number of days to predict closing costs 
+    * Create x_test list
 4) Building LSTM Model
-    4.1) Define model as sequential, add hidden layers
-    4.2) Add output layer containing 1 unit
-    4.3) Compile model using adam optimizer and MSE 
-    4.4) Fit the model with training data
+    * Define model as sequential, add hidden layers
+    * Add output layer containing 1 unit
+    * Compile model using adam optimizer and MSE 
+    * Fit the model with training data
 5) Test Prediction Model
-    5.1) Perform inverse transformation
-    5.2) Create y_test data to compare with predictions
-    5.3) Calculate MSE
+    * Perform inverse transformation
+    * Create y_test data to compare with predictions
+    * Calculate MSE
 6) Plot test Prediction against Actual
-    6.1) X Label: Date in "Years", Y Label: Stock Price
+    * X Label: Date in "Years", Y Label: Stock Price
 
 
 
