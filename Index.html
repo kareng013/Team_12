@@ -9,45 +9,71 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
- 
+
 </head>
 
 <body onload="initViz();">
-  <div id="tableauViz"><div>
-  
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 jumbotron text-center">
-        <h1>Stocks Dashboard</h1>
-        <p>Interactive charts and Tableau Visualization</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-2">
-        <div class="well">
-          <h5> Stocks :</h5>
-          <!-- <select id="selDataset"></select> -->
-          <select id="selDataset" onchange="stocksChanged(this.value)"></select>
-          <div class="row">
-            <div class="col-md-2">
-            <h5> Days:</h5>
-          <select id="selDatasetdays" onchange="daysChanged(this.value)"></select>
-        </div>
 
-          <div id="sample-metadata" class="panel-body"></div>
+    <div id="tableauViz"><div>
+
+      </div>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Stock Dashboard</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#line">Stock Chart</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 jumbotron text-center">
+            <h1>Stocks Dashboard</h1>
+            <p>Interactive charts and Tableau Visualization for Blackberry, Google and Netflix ending September 19, 2022
+            </p>
+
+          </div>
         </div>
-      </div>
-      <div class="col-md-5">
-        <div id="line"></div>
-      </div>
-      </div>
-  
-  <canvas id="chart" width="400" height="=400"></canvas>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-  <script src='plots.js'></script>
-  <script src="tableau.js"></script>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="well">
+              <h5> Stocks :</h5>
+              <!-- <select id="selDataset"></select> -->
+              <select id="selDataset" onchange="stocksChanged(this.value)"></select>
+              <div class="row">
+                <div class="col-md-2">
+                  <h5> Days:</h5>
+                  <select id="selDatasetdays" onchange="daysChanged(this.value)"></select>
+                </div>
+
+                <div id="sample-metadata" class="panel-body"></div>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div id="line"></div>
+            </div>
+          </div>
+
+          <canvas id="chart" width="400" height="=400"></canvas>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+          <script src='plots.js'></script>
+          <script src="tableau.js"></script>
 
 </body>
+
 </html>
-
-
