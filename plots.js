@@ -28,7 +28,7 @@ function initDays() {
 
     // Use number of days to populate the select options
 
-    var days = [30, 60, 90]
+    var days = [7, 30, 60, 90]
 
     days.forEach((sample) => {
         day_selector
@@ -85,8 +85,8 @@ async function chartIt(stockName, day) {
                     ticks: {
                         // Include a dollar sign in the ticks
                         callback: function (value, index, values) {
-                            return value + '%';
-                        }
+                            return value +'$';
+                        },
                     }
                 }
             }
