@@ -9,16 +9,58 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+  <style type="text/css">
+    .jumbotron {
+      /* margin: 15px 30px 0px 30px; */
+      /* border-radius: 12px; */
+      background:
+        /* linear-gradient(rgba(0, 0, 250, 0.25), */
+        /* rgba(125, 250, 250, 0.45)), */
+        url(https://i.ibb.co/C1ZMd82/logo3.png);
+      background-repeat: no-repeat;
+      /* background-attachment: fixed; */
+      /* background-size: cover; */
+      /* background: contain;  */
+      width: 150%;
+      height: 100px;
+      max-width: 1500px;
+      color: rgb(247, 241, 241) !important;
+      height: 150px;
+    }
+  </style>
+  <style>
+    <h5>HTML Links</h1>body {
+      background-color: hsl(210, 12%, 97%);
+    }
 
-</head>
+
+    h1 {
+
+      color: #1e0204;
+    }
+
+    p {
+      color: rgb(6, 4, 5)
+    }
+  </style>
+
+
 
 <body onload="initViz();">
 
-    <div id="tableauViz"><div>
 
-      </div>
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
+
+  <!-- <nav class="navbar navbar-default"> -->
+  <nav class="navbar navbar-light" style="background-color: #bdbaf1;">
+    <div class="row">
+
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 jumbotron text-center">
+              <!-- <h1>Stocks Solution</h1> -->
+            </div>
+          </div>
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -28,51 +70,93 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Stock Dashboard</a>
-          </div>
+            <!-- <a class="navbar-brand" href="#">Google Slides</a> -->
+            <div class="col-md-2">
+              <!-- <h1>Links</h1> -->
+              <p><a
+                  href="https://docs.google.com/presentation/d/1DvQUJBw4VPTkZ_RZ826ioS6TOgaleCb9bUE36nq1HkQ/edit#slide=id.gc6f9e470d_0_0">Google
+                  Slides</a></p>
 
+              <!-- <p><a href="">Google Slides</a></p> -->
+
+            </div>
+          </div>
+          <div></div>
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#line">Stock Chart</a></li>
+              <li><a href="#line">Historical Chart</a></li>
+              <li><a href="#tableauViz">Tableau Story board</a></li>
+              <li><a href="#Prediction Chart">Prediction Chart</a></li>
+
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
-      </nav>
 
-      <div class="container">
         <div class="row">
-          <div class="col-md-12 jumbotron text-center">
-            <h1>Stocks Dashboard</h1>
-            <p>Interactive charts and Tableau Visualization for Blackberry, Google and Netflix ending September 19, 2022. The Chart is able to display stocks report for each Company in the last 7days to 90 days.
+          <div class="col-md-10">
+            <h1>Stocks Analysis Dashboard</h1>
+            <p>Data Visualization based on the analysis of Stock investment portfolio for Blackberry, Netflix and Google.
+              Using the historiral data of the three companies in the past five years to predict future stock prices. The analysis will enable potential investors to make informed investment decison.
+
+
+              The analysis is able to preditct the volatility of each stock and also make comaprison to know the company
+              with the highest investment returns. It will also give a guide on the when to buy or sell.
+
+              
             </p>
-
           </div>
-        </div>
+  </nav>
+  <!-- <div class="row">
+    <div class="col-md-10"> -->
+      <h1>Prediction Chart</h1>
+      <p>Below is the chart is the output of our predictions using LSTM machine learning model.</p>
+  <img src="https://raw.githubusercontent.com/kareng013/Team_12/main/presentation%20images/BB_2017_64_32.png"
+    width="400" height="400" alt="BB Chart"/>
+  <img src="https://raw.githubusercontent.com/kareng013/Team_12/Segment_4-ivor/presentation%20images/GG_2017_64_32.png"
+    width="400" height="400" alt="Google Chart"/>
+  <img src="https://raw.githubusercontent.com/kareng013/Team_12/Segment_4-ivor/presentation%20images/NF_2017_64_32.png"
+    width="400" height="400" alt="Netflix Chart"/>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-10">
+
+      <div class="well">
+        <h1>Historical Chart</h1>
+        <h5> Stocks :</h5>
+        <!-- <select id="selDataset"></select> -->
+        <select id="selDataset" onchange="stocksChanged(this.value)"></select>
         <div class="row">
-          <div class="col-md-3">
-            <div class="well">
-              <h5> Stocks :</h5>
-              <!-- <select id="selDataset"></select> -->
-              <select id="selDataset" onchange="stocksChanged(this.value)"></select>
-              <div class="row">
-                <div class="col-md-2">
-                  <h5> Days:</h5>
-                  <select id="selDatasetdays" onchange="daysChanged(this.value)"></select>
-                </div>
-
-                <div id="sample-metadata" class="panel-body"></div>
-              </div>
-            </div>
-            <div class="col-md-5">
-              <div id="line"></div>
-            </div>
+          <div class="col-md-2">
+            <h5> Days:</h5>
+            <select id="selDatasetdays" onchange="daysChanged(this.value)"></select>
           </div>
 
+          <div id="sample-metadata" class="panel-body"></div>
+          <div id="line"></div>
           <canvas id="chart" width="400" height="=400"></canvas>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-          <script src='plots.js'></script>
-          <script src="tableau.js"></script>
+
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- <div class="col-md-3"> -->
+
+  </div>
+
+  <div id="tableauViz">
+    <h1>Tableau Story Board</h1>
+  </div>
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src='plots.js'></script>
+  <script src="tableau.js"></script>
+
 
 </body>
 

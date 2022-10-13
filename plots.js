@@ -98,7 +98,7 @@ async function getData(stockName, day) {
     const xaxis = [];
     const yaxis = [];
 
-    console.log(stockName, day)
+    // console.log(stockName, day)
 
     const response = await fetch(`Resources/${stockName}.csv`);
     const data = await response.text();
