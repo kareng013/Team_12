@@ -114,7 +114,6 @@ async function getData(stockName, day) {
         const close = columns[4];
         yaxis.push(close);
 
-        // console.log(year, close);
     });
     return { xaxis, yaxis };
 
