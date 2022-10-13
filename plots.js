@@ -98,7 +98,7 @@ async function getData(stockName, day) {
     const xaxis = [];
     const yaxis = [];
 
-    console.log(stockName, day)
+    // console.log(stockName, day)
 
     const response = await fetch(`Resources/${stockName}.csv`);
     const data = await response.text();
@@ -114,7 +114,6 @@ async function getData(stockName, day) {
         const close = columns[4];
         yaxis.push(close);
 
-        // console.log(year, close);
     });
     return { xaxis, yaxis };
 
