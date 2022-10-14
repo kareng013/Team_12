@@ -79,13 +79,13 @@ A few questions we hope to answer as we examine this data are:
 
     * Create new dataframe with training data
 
-![BB_Training]()
+![BB_Training](https://github.com/kareng013/Team_12/blob/main/LSTM%20Images/BB%20Training%20Data.png)
 **Blackberry Training Data**
 
-![NFLX_Training]()
+![NFLX_Training](https://github.com/kareng013/Team_12/blob/main/LSTM%20Images/Netflix%20Training%20Data.png)
 **Netflix Training Data**
 
-![Google_Training]()
+![Google_Training](https://github.com/kareng013/Team_12/blob/main/LSTM%20Images/Google%20Training%20Data.png)
 **Alphabet Inc. Training Data**
 
 3) Training the Dataset 
@@ -98,7 +98,7 @@ A few questions we hope to answer as we examine this data are:
 
     * Create x_test list
 
-![Netflix_Training_dataset]()
+![Netflix_Training_dataset](https://github.com/kareng013/Team_12/blob/main/LSTM%20Images/Netflix%20Training%20Dataset.png)
 **Example: Netflix is shown above as an example to show how the dataset was trained**
 
 4) Building LSTM Model
@@ -109,7 +109,7 @@ A few questions we hope to answer as we examine this data are:
 
     * Compile model using adam optimizer and MSE 
 
-![Model_Summary_Netflix]()
+![Model_Summary_Netflix](https://github.com/kareng013/Team_12/blob/main/LSTM%20Images/Netflix%20Model%20Summary.png)
 **Netlflix Model Summary**
 
     * Fit the model with training data
@@ -119,9 +119,6 @@ A few questions we hope to answer as we examine this data are:
     * Perform inverse transformation
 
     * Create y_test data to compare with predictions
-
-![Netflix_ytestdata]()
-**Netflix y_test Data**
 
     * Calculate MSE
 
@@ -156,8 +153,14 @@ A few questions we hope to answer as we examine this data are:
 
     Through various experiments, we found that every stock needs different numbers of neurons and layers to be able to forecast accuratly. This involved us to experiment with the numbers more in order to come close to the actual results. If we did have more time, we could have researched more into the different neurons and layers applicable for these data types. The MSE results would also vary based on the neurons and layers chosen. 
 
-**GOOGL MSE**                                           **NFLX MSE**                                                **BB MSE**
-![GOOGL_MSE]()                                          ![NFLX_MSE]()                                               ![BB_MSE]()
+**GOOGL MSE**                                                                                 
+![GOOGL_MSE](https://github.com/kareng013/Team_12/blob/main/LSTM%20Images/GOOGL_MSE.png)                                     
+
+**NFLX MSE** 
+![NFLX_MSE](https://github.com/kareng013/Team_12/blob/main/LSTM%20Images/NFLX_MSE.png)
+
+**BB MSE**  
+![BB_MSE](https://github.com/kareng013/Team_12/blob/main/LSTM%20Images/BB_MSE.png)
 
 3) Are there current environmental constraints affecting the stock price? 
 
