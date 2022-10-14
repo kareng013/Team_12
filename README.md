@@ -2,44 +2,49 @@
 
 ## Overview 
 
-Problem Statement: An Investor with a portfolio containing 3 stocks (Netflix, Blackberry, and Google) would like to know based on past closing prices if they should hold, sell or purchase more shares in their portfolio for the future. 
+Problem Statement: An Investor with a portfolio containing 3 stocks (Netflix, Blackberry, and Alphabet Inc.) would like to know based on past closing prices if they should hold, sell or purchase more shares in their portfolio for the future. 
 
-Based on historical data, we will utilize the daily price of the stock at close to predict the next days closing price in order to help new investors make a decision using machine learning model LSTM for future predictions. 
+Based on historical data, *Stock Solutions*, a newly founded company helping investors make decisions, will utilize many variables available from Yahoo Finance to predict the next days closing price. In order to help new investors make a decision, the company will be using a Machine Learning Model - LSTM for future predictions. 
 
-The reason why we selected our topic is due to the ever changing circumstances in the market that make it hard for traders to predict when the best time to buy or sell is. Having historical data from over 10+ years will help us evaluate previous data in order to predict future trends in the market for the stocks selected. This will help our investors decide the best time to buy and sell the specific stocks selected. 
+The reason why we selected our topic is due to the ever changing circumstances in the market that make it hard for traders to predict when the best time to buy or sell is. Having historical data from over 10+ years will help us evaluate previous data in order to predict future trends in the market for the stocks selected. This will help our investors thoroughly evaluate their portfolio's to determine what they should do with their stocks. Our goal is to train the model well enough to have the predictions align closely with the actual results. 
 
 ## Portfolio
 
-Blackberry
+Blackberry (BB) - 
 
 Netflix
 
-Google
+Alphabet Inc.
 
 ## Source of Data
 
-We will be utilizing stocks from 3 companies from Yahoo Finance as the source of data. We have exported data with maximum history to evaluate daily open and close price. The stocks we are evaluating using the model are Google, Netflix, Blackberry. The reason we chose these stocks is because we wanted to utilize stocks that have been around for a very long time and can show trends through out different periods having gone through different environmental and financial changes. 
+We will be utilizing stocks from 3 companies from Yahoo Finance as the source of data. We have exported data with maximum history to evaluate daily open and close price. The stocks we are evaluating using the model are Alphabet Inc., Netflix, Blackberry. The reason we chose these stocks is because we wanted to utilize stocks that have been around for a very long time and can show trends through out different periods having gone through different environmental and financial changes. 
 
 Resources:
-1) Yahoo Finance
+1) Application
 
-2) Software
+    * AWS
+    * Github
+    * Tableau
     * Visual Studio Code
-    * Jupyter Notebook
-    * SQLAlchemy + PostgreSQL
-    * Language: Python, Javascript, HTML
-    * Machine Learning dependencies: 
-        Pandas
-        Numpy
-        Matplotlib
-        Psycopg
-        MinMaxScaler
-        Standard Scaler
+    * PostgreSQL
+
+2) Languages:
+
+    * Python
+    * Javascript
+    * HTML
+
+3) Tools:
+
+    * Pandas
+    * Numpy
+    * Matplotlib
+    * Psycopg
+    * Scikit-Learn
+    * Tensorflow
         
-
-3) Tableau 
-
-5) Google Slides - Click here [GoogleSlides](https://docs.google.com/presentation/d/1DvQUJBw4VPTkZ_RZ826ioS6TOgaleCb9bUE36nq1HkQ/edit?usp=sharing)
+4) Google Slides - Click here [GoogleSlides](https://docs.google.com/presentation/d/1DvQUJBw4VPTkZ_RZ826ioS6TOgaleCb9bUE36nq1HkQ/edit?usp=sharing)
 
 
 ## Data Analysis
@@ -55,10 +60,9 @@ Below is a screenshot of the conceptual diagram of the of the 3 companies data.
 
 A few questions we hope to answer as we examine this data are:
 
-1) Is this portfolio volatile?
-2) How long should the stocks be held for?
-3) Are there current environmental constraints affecting the stock price compared to previous years?
-4) What are other factors affecting the stock price in the time period evaluated?
+1) How good is the LSTM Model to predict future trends?
+2) Could LSTM Model forecast the different stocks with same neurons and layers?
+3) Are there current environmental constraints affecting the stock price? 
 
 ### Database & Machine Learning Model Steps
 
@@ -90,4 +94,6 @@ A few questions we hope to answer as we examine this data are:
 
 ## Results 
 
-
+1) How good is the LSTM Model to predict future trends?
+2) Could LSTM Model forecast the different stocks with same neurons and layers?
+3) Are there current environmental constraints affecting the stock price? 
